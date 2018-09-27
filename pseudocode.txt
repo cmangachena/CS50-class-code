@@ -1,11 +1,1 @@
-Check that program was run with one command-line argument
-Iterate over the provided argument to make sure all characters are digits
-Convert that command-line argument from a string to an int
-Prompt user for plaintext
-Iterate over each character of the plaintext:
-If it is an uppercase letter, rotate it, preserving case, then print out the rotated character
-If it is a lowercase letter, shift it, preserving case, then print out the rotated character
-If it is neither, print out the character as is
-Print a newline
-It’s okay to edit your own after seeing this pseudocode here, but don’t simply copy/paste ours into your own!
-\432                  
+    
