@@ -1,0 +1,102 @@
+/*******************
+ * Problem Set 5   *
+ * CS50, Fall 2018 *
+ *******************/
+
+/*To style the body*/
+body
+{
+
+    background-image: url(wall4.png), url(wall4.png), url(wall4.png);
+    background-position:left top, center top, right top;
+    background-repeat: repeat-y, repeat-y, repeat-y;
+    background:cover;
+    background-size: auto;
+    margin:40px;
+}
+
+/*To syle navigation bar*/
+nav {
+    display: block;
+    padding: 130px;
+    background-color: #d8bfd8;
+}
+/*To style links in navigation bar*/
+a{
+    color:#000000;
+    font-style: 15pt Verdana;
+}
+/*To style level 3 headers*/
+h3{
+    margin:30px;
+    font-size: 25pt;
+   font-style: monospace;
+   text-decoration: underline;
+   text-decoration-color:#dda0dd;
+   color:#696969;
+}
+/*To align text*/
+center
+{
+    text-align: center;
+    color: 808800;
+}
+/*To style table*/
+table{
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th{
+    border: 2px solid #696969;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*To style very first paragraph*/
+#para1
+{
+    text-decoration: none;
+    font-style: normal;
+    font-size:30pt;
+}
+/*To specifically align text*/
+ .centered
+{
+    text-align: center;
+}
+
+/*To style first header*/
+#myHeader {
+    color: #A9A9A9;
+    padding: 40px;
+    margin: 100px;
+    text-align: center;
+    font-size: 120pt;
+    font-style: italic;
+}
+/*To style in-text links*/
+#a1{
+    color: #dda0dd;
+}
+/*To style paragraphs*/
+p{
+    margin:20px;
+    font-style:normal;
+    font: Verdana;
+    font-size: 20pt;
+    color: #696969
+}
+/*To style level1 header*/
+h1{
+    font-size: 30pt;
+    color: #696969;
+    text-decoration: underline;
+    text-decoration-color: #dda0dd;
+}
+/*<!--Snippets of code included from w3schools.com*/
+
