@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="mb-3">Study Break Snacks</h1>
+
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+        <form action="/form" method="post">
+            <input autocomplete="off" autofocus name="fname" placeholder="First Name" type="text">
+            <input autocomplete="off" autofocus name="lname" placeholder="Last Name" type="text"/>
+            <input autocomplete="off" autofocus name="number" placeholder="Quantity" type="number"/>
+            <select name="snack">
+                <option disabled selected value="">Snack</option>
+                <option value="Snickers">Snickers</option>
+                <option value="Kit-Kat">Kit-Kat</option>
+                <option value="Lays">Lays</option>
+                <option value="Oreos">Oreos</option>
+                <option value="Spuds">Spuds</option>
+                <option value="Hersheys">Hersheys</option>
+                <option value="Simbas">Simas</option>
+                <option value="Butterscotch">Butterscotch</option>
+            </select>
+        <div>
+            <p><h4>Beverage</h4>
+                <input type="radio" name="drink" value="water" checked> Water<br>
+                <input type="radio" name="drink" value="pepsi"> Pepsi<br>
+                <input type="radio" name="drink" value="other"> Fruit Juice
+            </p>
+        </div>
+        <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+        <p><button class="btn btn-primary" type="submit">Submit</button></p>
+
+    </form>
+
+    <script>
+
+           document.querySelector('form').onsubmit = function() {
+                if (!document.querySelector('input[name=fname]').value) {
+                    alert('You must provide your firstname!');
+                    return false;
+                }
+                else if(!document.querySelector('input[name=lname]').value) {
+                    alert('You must provide your lastname!');
+                    return false;
+                }
+                else if(!document.querySelector('input[type=number]').value) {
+                    alert('You must provide the quantity!');
+                    return false;
+                }
+                else if (!document.querySelector('select').value) {
+                    alert('You must provide your snack!');
+                    return false;
+                }
+                return true;
+            };
+
+        </script>
+
+{% endblock %}
