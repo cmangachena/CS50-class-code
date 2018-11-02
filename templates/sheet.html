@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<!--with the aid of bootstrap-->
+    <table class="table table-hover">
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Snack Picked</th>
+        <th>Quantiy</th>
+        <th>Beverage</th>
+        {% for snack in snacks %}
+           <tr>
+                 <td>{{ snack[0] }}</td>
+
+                  <td>{{ snack[1] }}</td>
+
+                  <td>{{ snack[2] }}</td>
+
+                  <td>{{ snack[3] }}</td>
+
+                  <td>{{ snack[4] }}</td>
+          </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
