@@ -147,7 +147,7 @@ def history():
 
        rows = db.execute("SELECT symbol, number_of_shares, price, transaction_time FROM transactions WHERE id = :id", id=session["user_id"])
 
-        return render_template("history.html", rows=rows)
+    return render_template("history.html", rows=rows)
     #return apology("TODO")
 
 
