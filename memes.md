@@ -14,6 +14,6 @@
 
 ## Debrief
 
-a. TODO
+a. Google
 
-b. TODO minutes
+b. 20 minutes
