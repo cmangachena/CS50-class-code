@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Memes</title>
+    </head>
+    <body>
+        <h1>Harvard Memes for Elitist 1% Tweens</h1>
+        <form>
+            <input autofocus autocomplete="off" name="comment" placeholder="Comment" type="text">
+            <input type="submit" value="Post">
+        </form>
+        <ul></ul>
+        <script>
+
+            const FRIENDS = {
+                'Bill Gates': 'BillGates',
+                'Mark Zuckerberg': 'zuck'
+            };
+ 
+            document.querySelector('form').onsubmit = function(e) {
+                e.preventDefault();
+                let comment = document.querySelector('input[name=comment]');
+                let li = '<li>' + linkify(comment.value) + '</li>';
+                document.querySelector('ul').innerHTML += li;
+                comment.value = '';
+            };
+
+            function linkify(s) {
+                // TODO
+            }
+
+        </script>
+    </body>
+</html>
