@@ -1,0 +1,118 @@
+
+body
+{
+  background-image: url("background.jpg");
+}
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+}
+
+
+main .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* center contents */
+    text-align: center;
+}
+
+main img
+{
+    /* constrain images on small screens */
+    max-width: 100%;
+}
+
+td
+{
+    padding: 50px;
+}
+
+.category
+{
+   background-color: clear;
+   font: courier;
+   font-size: 20pt;
+   color: white;
+   text-align: center;
+}
+
+#study_abroad
+{
+  padding: 50px;
+}
+
+#research
+{
+  padding: 50px;
+}
+
+#internships
+{
+   padding: 50px;
+}
+
+#volunteer
+{
+   padding: 50px;
+}
+
+#boston
+{
+    padding: 50px;
+}
+
+#clubs
+{
+    padding: 50px;
+}
+
+#campus
+{
+  padding: 50px;
+}
+
+#other
+{
+  padding: 50px;
+}
+
+.container
+{
+    padding: 50px;
+    background-color: clear;
+}
+
+.events
+{
+    background-color: #e0eee0;
+    padding:20px;
+}
+
+#myHeader
+{
+    font-size: 50pt;
+    font: Arial, sans-serif;
+    color: white;
+}
+
+img
+{
+    border-radius: 30%;
+}
+
+.table
+{
+    background-color: #e0eee0;
+}

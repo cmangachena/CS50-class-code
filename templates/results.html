@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}
+    RESULTS
+{% endblock %}
+
+{% block main %}
+         <h1 id="myHeader">Here are all the events that match your search!!</h1>
+               {% for row in results %}
+                <div class="events">
+                    <h1>{{row["event_name"]}}</h1>
+                    <h2>{{row["event_category"]}}</h2>
+                    <h3>{{row["event_location"]}}</h3>
+                    <h4>{{row["event_date"]}}</h4>
+                    <h4>{{row["event_time"]}}</h4>
+                    <p>{{row["event_description"]}}</p>
+                 </div>
+                 {% endfor%}
+{% endblock %}
