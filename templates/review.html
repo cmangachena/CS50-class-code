@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    BUY
+{% endblock %}
+
+{% block main %}
+
+    <form action="/reviews" method="post">
+        <div class="form-group">
+            <select class="form-control" name="event_category">
+              <option disabled selected value="">Event Category</option>
+              <option value="study_abroad">Study Abroad</option>
+              <option value="research">Research</option>
+              <option value="internship">Internship</option>
+              <option value="volunteer">Volunteer Work</option>
+              <option value="boston">Socials in Boston</option>
+              <option value="clubs">Club Events</option>
+              <option value="campus">Campus Parties</option>
+              <option value="other">Other</option>
+            </select>
+            <input autocomplete="off" autofocus class="form-control" name="event_name" placeholder="Event Name" type="text" min="0">
+            <input autocomplete="off" autofocus class="form-control" name="event_location" placeholder="Event Location" type="text" min="0">
+            <input autocomplete="off" autofocus class="form-control" name="event_date" placeholder="Event Date" type="date" min="0">
+            <div>
+                <input autocomplete="off" autofocus class="form-control" name="review" placeholder="Review Event" style="height:100px; width:750px" type="text" min="0">
+            </div>
+        </div>
+        <div class="form-group">
+        </div>
+        <button class="btn btn-danger" type="submit">Review</button>
+    </form>
+
+</html>
+{% endblock %}

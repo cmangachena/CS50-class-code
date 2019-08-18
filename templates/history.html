@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  History
+{% endblock %}
+
+{% block main %}
+
+    <main class="container p-5">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Event Name</th>
+                <th>Event Category</th>
+                <th>Event Location</th>
+                <th>Event Date</th>
+                <th>Event Time</th>
+                <th>Event Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+                <tr>
+                    <td>{{row["event_name"]}}</td>
+                    <td>{{row["event_category"]}}</td>
+                    <td>{{row["event_location"]}}</td>
+                    <td>{{row["event_date"]}}</td>
+                    <td>{{row["event_time"]}}</td>
+                    <td>{{row["event_description"]}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+        </main>
+{% endblock %}

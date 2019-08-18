@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}
+    Categorized Events
+{% endblock %}
+
+{% block main %}
+            <h1 id="myHeader">Here are all the events in this category!!</h1>
+
+               {% for row in ordered_events %}
+                <div class = "events">
+                    <h1>{{row["event_name"]}}</h1>
+                    <h2>{{row["event_category"]}}</h2>
+                    <h3>{{row["event_location"]}}</h3>
+                    <h4>{{row["event_date"]}}</h4>
+                    <h4>{{row["event_time"]}}</h4>
+                    <p>{{row["event_description"]}}</p>
+                    <a href="mailto:someone@example.com?subject=Event%20Suggestion&body=Dear%20(enter%20friend's%20name)%0D%0DHey%20I%20am%20interested%20in%20(name%20of%20event%20you%20want%20to%20share)%20Visit%20FOMONomore%20and%20check%20it%20out%20too!!%0D%0DBest,%0D(Your%20name)">
+                        <button class="btn btn-danger">Share</button></a>
+                 </div>
+                {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %}
+   Homepage
+{% endblock %}
+{% block main %}
+
+        <div>
+        <h1 id="myHeader">WELCOME TO THE EVENTS PAGE!</h1>
+        </div>
+
+        <div class="container">
+         <table class="table-responsive-sm">
+        <tr>
+             <td><a class="category" id="study_abroad" href="/study_abroad"><img src="/static/study_abroad.jpeg" >{{category[0]}}</a></td>
+              <td><a class="category" id="research" href="/research"><img src="/static/research.png">{{category[1]}}</a></td>
+              <td><a class="category" id="internship" href="/internship"><img src="/static/internships.jpg">{{category[2]}}</a></td>
+              <td><a class="category"id="volunteer" href="/volunteer"><img src="/static/volunteer.jpg">{{category[3]}}</a></td>
+        </tr>
+        <tr>
+             <td><a class="category" id="boston" href="/boston"><img src="/static/boston.jpg">{{category[4]}}</a></td>
+             <td><a class="category" id="clubs" href="/clubs"><img src="/static/clubs.jpg">{{category[5]}}</a></td>
+             <td><a class="category" id="campus" href="/campus"><img src="/static/campus.jpg">{{category[6]}}</a></td>
+             <td><a class="category" id="other" href="/other"><img src="/static/atag.png">{{category[7]}}</a></td>
+        </tr>
+             </div>
+            </table>
+{% endblock %}
